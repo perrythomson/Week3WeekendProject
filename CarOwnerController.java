@@ -46,7 +46,7 @@ public class CarOwnerController extends HttpServlet {
             DataJson.setCar(saveNewCar);
             jspName = "viewAllCars";
         }
-        RequestDispatcher view = request.getRequestDispatcher("/customers/"+jspName+".jsp");
+        RequestDispatcher view = request.getRequestDispatcher("/carPages/"+jspName+".jsp");
         view.forward(request, response);
     }
     public void doGet(HttpServletRequest request,
